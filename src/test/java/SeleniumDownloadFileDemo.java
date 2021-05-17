@@ -36,8 +36,10 @@ public class SeleniumDownloadFileDemo {
         WebElement el = list.get(list.size()-1);
         el.click();
         Thread.sleep(500);
+
         //Hide Google Popup Ad
         js.executeScript("document.querySelector(\"html > ins\").style.display='none'");
+
         //Again click to 5MB web element
         el.click();
 
